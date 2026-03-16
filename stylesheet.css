@@ -11,3 +11,21 @@
     background: #413043;
     font-family: "Geist", sans-serif;
 }
+
+
+
+#nav {
+background-color: #FFC219;
+}
+
+#quicklinks {
+background-color: #413043;
+}
+
+#quicklinks a {
+transition: color 0.3s;
+}
+
+#quicklinks a:hover {
+color: #FFC219 !important;
+}
