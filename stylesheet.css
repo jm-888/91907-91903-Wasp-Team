@@ -2,80 +2,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lalezar&display=swap');
 
 #nav-trial-1 {
-    background: #FFC219;
-    font-family: "Lalezar", sans-serif;
-
+  background: #FFC219;
+  font-family: "Lalezar", sans-serif;
 }
 
 #footer-trial-1 {
-    background: #413043;
-    font-family: "Geist", sans-serif;
+  background: #413043;
+  font-family: "Geist", sans-serif;
 }
 
-
-
 #nav {
-background-color: #FFC219;
+  background-color: #FFC219;
 }
 
 #quicklinks {
-background-color: #413043;
+  background-color: #413043;
 }
 
 #quicklinks a {
-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 #quicklinks a:hover {
-color: #FFC219 !important;
+  color: #FFC219 !important;
 }
 
 .title-box {
-      background: #ffc629;
-      border-radius: 40px;
-      padding: 12px 30px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      display: inline-block;
-    }
+  background: #ffc629;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: inline-block;
+}
 
-    .info-card {
-      background: #f4b400;
-      border-radius: 40px;
-      padding: 20px;
-      width: 220px;
-      text-align: center;
-      position: absolute;
-    }
+.info-card {
+  background: #f4b400;
+  border-radius: 40px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  position: absolute;
+}
+
 /* made the main box invisible it is just used to make the labels nicely spaced out */
-    .main-box {
-      height: 300px;
-      border-radius: 80px;
-      position: relative;
-    }
+.main-box {
+  height: 300px;
+  border-radius: 80px;
+  position: relative;
+}
 
-    /* Positioning cards */
-    .card-left {
-      top: 60px;
-      left: -40px;
-    }
+/* Positioning cards */
+.card-left {
+  top: 60px;
+  left: -40px;
+}
 
-    .card-right {
-      top: 60px;
-      right: -40px;
-    }
+.card-right {
+  top: 60px;
+  right: -40px;
+}
 
-    .card-bottom {
-      bottom: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+.card-bottom {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-    .img-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      color: #333;
-    }
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #333;
+}
+
+/* New styles for hero banner */
+.hero-banner {
+  background-color: #f8f9fa; /* Light background for the hero section */
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Button styles */
+.btn-warning {
+  background-color: #FFC219;
+  border-color: #FFC219;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Darker shade on hover */
+  border-color: #e0a800;
+}
+
+body {
+  background-color: #ffefa8; 
+}
+.buttons{
+  background-color: #ffefa8; 
+}
+
+.custom-btn {
+  margin: 0px;
+  background-color: #ffcc3f; 
+  border: 5px solid #ffe38e; /*border */
+  padding: 50px 80px;
+  
+  font-weight: 800; /* bolder text */
+  font-size: 30px;
+  color: #363636;
+
+  border-radius: 40px;
+  cursor: pointer;
+
+  /* simple shadow (not shiny) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ffba25;
+  transform: translateY(-10px);
+}
+
+.custom-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
