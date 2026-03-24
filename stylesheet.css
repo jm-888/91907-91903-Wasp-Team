@@ -79,3 +79,12 @@ color: #FFC219 !important;
       font-size: 20px;
       color: #333;
     }
+
+
+/* Report Page Buttons */
+.report-page-button {
+  background-color: #003030;
+  border-radius: 15px;
+  color: white;
+  font-family: "Lalezar", sans-serif;
+}
