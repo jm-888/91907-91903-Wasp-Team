@@ -45,12 +45,6 @@
   position: absolute;
 }
 
-/* made the main box invisible it is just used to make the labels nicely spaced out */
-.main-box {
-  height: 300px;
-  border-radius: 80px;
-  position: relative;
-}
 
 /* Positioning cards */
 .card-left {
@@ -131,3 +125,100 @@ body {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #333;
+}
+
+
+/* Report Page Buttons */
+.report-page-button {
+  background-color: #003030;
+  border-radius: 15px;
+  color: white;
+  font-family: "Lalezar", sans-serif;
+}
+
+
+/* HERO */
+.hero-banner {
+    background: linear-gradient(135deg, #FFC219, #ffda5c);
+}
+
+.hero-banner h1 {
+  font-weight: 800;
+}
+
+.hero-banner button:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+/* BUTTONS */
+.custom-btn {
+  border-radius: 70px;
+  padding: 70px 100px;
+  border: 5px solid rgb(255, 234, 116);
+  background: rgb(255, 208, 0);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: black;
+  color: white;
+  border: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* TITLE BOX BASIC INFO*/
+.title-box {
+  display: inline-block;
+  border: 7px solid rgb(255, 234, 116);
+  padding: 15px 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* MAIN IMAGE */
+/* MAIN IMAGE CONTAINER */
+.main-box {
+  position: relative;
+  margin-bottom: 60px; /* space from history section */
+}
+
+/* IMAGE ITSELF */
+.main-box img {
+  width: 100%;
+  max-width: 1000px; /* controls how big it gets */
+  height: auto;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.main-box img:hover {
+  transform: scale(1.05);
+}
+
+.main-box img:hover {
+    transform: scale(1.05);
+}
+
+/* HISTORY SECTION */
+.history-img {
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.history-img:hover {
+    transform: scale(1.03);
+}
+
+
