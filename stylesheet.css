@@ -222,3 +222,10 @@ body {
 }
 
 
+
+
+.report-page-info-pill {
+  background-color: #F4C645;
+  border-radius: 15px;
+  border: 2px solid black;
+}
