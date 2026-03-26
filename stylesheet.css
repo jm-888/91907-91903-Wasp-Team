@@ -141,6 +141,12 @@
   border-radius: 15px;
   color: white;
   font-family: "Lalezar", sans-serif;
+  transition: 0.7s;
+}
+
+.report-page-button:hover {
+  transform: translateY(-10px);
+  transition: 0.7s;
 }
 
 
