@@ -237,7 +237,10 @@
 }
 
 img {
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 6px px rgba(0, 0, 0, 0.5));
+}
+.bannerbee-image img {
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
 }
 
 .navbar {
@@ -320,4 +323,12 @@ img {
   background-color: transparent;
   color: #FFC219; /* your yellow */
   transform: translateX(5px);
+}
+
+
+.aboutus-text {
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 20px;
+  width: 150px;
 }
