@@ -1,81 +1,376 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lalezar&display=swap');
 
-#nav-trial-1 {
-    background: #FFC219;
-    font-family: "Lalezar", sans-serif;
 
+
+/* Nav Trialing */
+#nav-trial-1 {
+  background: #FFC219;
+  font-family: "Lalezar", sans-serif;
 }
 
 #footer-trial-1 {
-    background: #413043;
-    font-family: "Geist", sans-serif;
+  background: #413043;
+  font-family: "Geist", sans-serif;
 }
 
 
 
+/* Navbar CSS */
+
 #nav {
-background-color: #FFC219;
+  background-color: #FFC219;
+}
+
+
+.honeycomb-bg {
+  background-color: #ffc400;
+  background-image: url("/Images/Repeating-honeycomb.png");
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 #quicklinks {
-background-color: #413043;
+  background-color: #413043;
 }
 
 #quicklinks a {
-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 #quicklinks a:hover {
-color: #FFC219 !important;
+  color: #FFC219 !important;
 }
 
+
+.navbar {
+  background-color: transparent !important;
+}
+
+
+/* Navbar links */
+.navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 800;
+  font-size: 1rem;       /* smaller text */
+  letter-spacing: 0.2px;
+  margin-left: 0.6rem; /* space between links */
+  padding: 0.5rem 3rem;
+  border-radius: 0.8rem; /* rounded corners for background */
+  transition: background-color 0.5s;
+}
+
+/* Hover effect: background only */
+.navbar .nav-link:hover {
+    background-color: #000000; /* yellow background on hover */
+    color: #ffffff; /* text color change for contrast */
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.contact-btn {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+ .contact-btn:hover {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+
+/* Dropdown container */
+.custom-menu {
+  background-color: #2f2f2f;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  min-width: 180px;
+  margin-top: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Top "INFO" tab */
+.dropdown-header-box {
+  background-color: #2f2f2f;
+  color: #ccc;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Items */
+.custom-menu .dropdown-item {
+  color: #eee;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.custom-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #FFC219; /* your yellow */
+  transform: translateX(5px);
+}
+
+
+/* Footer CSS */
+
+#footer-main {
+  background: #413043;
+  font-family: "Geist", sans-serif;
+}
+
+.footer-button {
+  transition: 0.3s;
+}
+
+.footer-button:hover {
+  background-color: #302231;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+/* Homepage */
+
 .title-box {
-      background: #f4b400;
-      border-radius: 40px;
-      padding: 12px 30px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      display: inline-block;
-    }
+  background: #ffc629;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: inline-block;
+}
 
-    .info-card {
-      background: #f4b400;
-      border-radius: 40px;
-      padding: 20px;
-      width: 220px;
-      text-align: center;
-      position: absolute;
-    }
-/* made the main box invisible it is just used to make the labels nicely spaced out */
-    .main-box {
-      height: 300px;
-      border-radius: 80px;
-      position: relative;
-    }
+.info-card {
+  background: #f4b400;
+  border-radius: 40px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  position: absolute;
+}
 
-    /* Positioning cards */
-    .card-left {
-      top: 60px;
-      left: -40px;
-    }
 
-    .card-right {
-      top: 60px;
-      right: -40px;
-    }
+/* Positioning cards */
+.card-left {
+  top: 60px;
+  left: -40px;
+}
 
-    .card-bottom {
-      bottom: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+.card-right {
+  top: 60px;
+  right: -40px;
+}
 
-    .img-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      color: #333;
-    }
+.card-bottom {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #333;
+}
+
+/* New styles for hero banner */
+.hero-banner {
+  background-color: #f8f9fa; /* Light background for the hero section */
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Button styles */
+.btn-warning {
+  background-color: #FFC219;
+  border-color: #FFC219;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Darker shade on hover */
+  border-color: #e0a800;
+}
+
+.index-body {
+  background-color: #ffefa8; 
+}
+.buttons{
+  background-color: #ffefa8; 
+}
+
+.custom-btn {
+  margin: 0px;
+  background-color: #ffcc3f; 
+  border: 5px solid #ffe38e; /*border */
+  padding: 50px 80px;
+  
+  font-weight: 800; /* bolder text */
+  font-size: 30px;
+  color: #363636;
+
+  border-radius: 40px;
+  cursor: pointer;
+
+  /* simple shadow (not shiny) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ffba25;
+  transform: translateY(-10px);
+}
+
+.custom-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #333;
+}
+
+
+
+/* Report Page */
+.report-page-button {
+  background-color: #000000;
+  border-radius: 15px;
+  color: white;
+  font-family: "Lalezar", sans-serif;
+  transition: 0.7s;
+}
+
+.report-page-button:hover {
+  transform: translateY(-10px);
+  transition: 0.7s;
+}
+
+.report-button-link {
+  text-decoration: none;
+}
+
+
+/* HERO */
+.hero-banner {
+    background: linear-gradient(135deg, #FFC219, #ffda5c);
+}
+
+.hero-banner h1 {
+  font-weight: 800;
+}
+
+.hero-banner button:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+/* BUTTONS */
+.custom-btn {
+  border-radius: 70px;
+  padding: 70px 100px;
+  border: 5px solid rgb(255, 234, 116);
+  background: rgb(255, 208, 0);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: black;
+  color: white;
+  border: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* TITLE BOX BASIC INFO*/
+.title-box {
+  display: inline-block;
+  border: 7px solid rgb(255, 234, 116);
+  padding: 15px 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* MAIN IMAGE */
+/* MAIN IMAGE CONTAINER */
+.main-box {
+  position: relative;
+  margin-bottom: 60px; /* space from history section */
+}
+
+/* IMAGE ITSELF */
+.main-box img {
+  width: 100%;
+  max-width: 1000px; /* controls how big it gets */
+  height: auto;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.main-box img:hover {
+  transform: scale(1.05);
+}
+
+.main-box img:hover {
+    transform: scale(1.1);
+}
+
+/* HISTORY SECTION */
+.history-img {
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.history-img:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+.report-page-info-pill {
+  background-color: #F4C645;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+img {
+  filter: drop-shadow(0 6px px rgba(0, 0, 0, 0.5));
+}
+.bannerbee-image img {
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
+}
+
+
+
+.aboutus-text {
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 20px;
+  width: 150px;
+}
