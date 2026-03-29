@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lalezar&display=swap');
 
+
+
+/* Nav Trialing */
 #nav-trial-1 {
   background: #FFC219;
   font-family: "Lalezar", sans-serif;
@@ -11,8 +14,20 @@
   font-family: "Geist", sans-serif;
 }
 
+
+
+/* Navbar CSS */
+
 #nav {
   background-color: #FFC219;
+}
+
+
+.honeycomb-bg {
+  background-color: #dba205;
+  background-image: url("/Images/Repeating-honeycomb.png");
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 #quicklinks {
@@ -26,6 +41,109 @@
 #quicklinks a:hover {
   color: #FFC219 !important;
 }
+
+
+.navbar {
+  background-color: transparent !important;
+}
+
+
+/* Navbar links */
+.navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 800;
+  font-size: 1rem;       /* smaller text */
+  letter-spacing: 0.2px;
+  margin-left: 0.6rem; /* space between links */
+  padding: 0.5rem 3rem;
+  border-radius: 0.8rem; /* rounded corners for background */
+  transition: background-color 0.5s;
+}
+
+/* Hover effect: background only */
+.navbar .nav-link:hover {
+    background-color: #000000; /* yellow background on hover */
+    color: #ffffff; /* text color change for contrast */
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.contact-btn {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+ .contact-btn:hover {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+
+/* Dropdown container */
+.custom-menu {
+  background-color: #2f2f2f;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  min-width: 180px;
+  margin-top: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+/* Top "INFO" tab */
+.dropdown-header-box {
+  background-color: #2f2f2f;
+  color: #ccc;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Items */
+.custom-menu .dropdown-item {
+  color: #eee;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.custom-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #FFC219; /* your yellow */
+  transform: translateX(5px);
+}
+
+
+/* Footer CSS */
+
+#footer-main {
+  background: #413043;
+  font-family: "Geist", sans-serif;
+}
+
+.footer-button {
+  transition: 0.3s;
+}
+
+.footer-button:hover {
+  background-color: #302231;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+/* Homepage */
 
 .title-box {
   background: #ffc629;
@@ -243,87 +361,6 @@ img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
 }
 
-.navbar {
-  background-color: #ffc625 !important; /* your yellow */
-}
-
-
-/* Navbar links */
-.navbar .nav-link {
-  color: rgb(0, 0, 0) !important;
-  font-weight: 800;
-  font-size: 1rem;       /* smaller text */
-  letter-spacing: 0.2px;
-  margin-left: 0.6rem; /* space between links */
-  padding: 0.5rem 3rem;
-  border-radius: 0.8rem; /* rounded corners for background */
-  transition: background-color 0.5s;
-}
-
-/* Hover effect: background only */
-.navbar .nav-link:hover {
-    background-color: #000000; /* yellow background on hover */
-    color: #ffffff; /* text color change for contrast */
-}
-
-.navbar .nav-link:hover {
-  color: #ffffff !important;
-}
-
-.contact-btn {
-  background-color: #000;
-  color: #fff;
-  font-weight: 600;
-  border: 2px solid #000;
-  border-radius: 8px;
-  padding: 6px 16px;
-  transition: all 0.3s ease;
-  margin-right: 10px;
-}
-
- .contact-btn:hover {
-  background-color: #2f2f2f;
-  color: #ffffff;
-}
-
-
-/* Dropdown container */
-.custom-menu {
-  background-color: #2f2f2f;
-  border: none;
-  border-radius: 12px;
-  padding: 15px 0;
-  min-width: 180px;
-  margin-top: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  overflow: hidden;
-}
-
-/* Top "INFO" tab */
-.dropdown-header-box {
-  background-color: #2f2f2f;
-  color: #ccc;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* Items */
-.custom-menu .dropdown-item {
-  color: #eee;
-  font-size: 20px;
-  padding: 10px 20px;
-  transition: all 0.2s ease;
-}
-
-/* Hover effect */
-.custom-menu .dropdown-item:hover {
-  background-color: transparent;
-  color: #FFC219; /* your yellow */
-  transform: translateX(5px);
-}
 
 
 .aboutus-text {

@@ -3,83 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Template page for Hornet team, includes navigation and footer layout.">
+    <meta name="keywords" content="hornet, navigation, website">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheet.css">
-    <title>Trial Navbar 1</title>
+    <title>Template Page</title>
 </head>
+
 <body>
+<!-- Header / Navigation -->
+<header class="honeycomb-bg">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="bannerbee" href="#">
-            <img src="../Images/Hornet-Logo-Black.png" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <img src="../Images/Hornet-Logo-Black.png" width="50" height="50"
+                 class="d-inline-block align-text-top me-2"
+                 alt="Website logo">
         </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarContent" aria-controls="navbarContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Burger menu -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-
+        </button>
+        <!-- Nav links -->
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="report-page.html">Report</a></li>
-            <li class="nav-item dropdown">
-            <li class="nav-item dropdown custom-dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
-            <div class="dropdown-menu custom-menu">
-                <a class="dropdown-item" href="indentification.html">Identification</a>
-                <a class="dropdown-item" href="why_they_are_harmful.html">Why They're Harmful</a>
-                <a class="dropdown-item" href="safety-page.html">Safety</a>
-            </div>
-            </li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="report-page.html">Report</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        More
+                    </a>
+                    <ul class="dropdown-menu custom-menu">
+                        <li><a class="dropdown-item" href="indentification.html">Identification</a></li>
+                        <li><a class="dropdown-item" href="why_they_are_harmful.html">Why They're Harmful</a></li>
+                        <li><a class="dropdown-item" href="safety-page.html">Safety</a></li>
+                    </ul>
+                </li>
             </ul>
             <form class="d-flex">
                 <button class="btn contact-btn" type="submit">Contact Us</button>
             </form>
         </div>
     </nav>
+</header>
 
 
 
 
-<footer id="footer-trial-1" class="text-white py-2 container-fluid">
+
+<!-- Footer -->
+<footer id="footer-main" class="text-white py-2 container-fluid">
     <div class="row align-items-center px-3">
-        
-    <div class="col-12 col-md-auto mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-        <a href="#"><img src="../Images/Hornet-Logo-White.png" alt="Logo" class="footer-logo mb-1 mx-4" style="height: 50px;"></a>
-        <p class="mb-0 small fw-light text-center text-md-start">Wasp Team 2026.</p>
-    </div>
+        <!-- Logo + text -->
+        <div class="col-12 col-md-auto mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+            <a href="index.html">
+                <img src="../Images/Hornet-Logo-White.png"
+                     alt="Logo"
+                     class="footer-logo mb-1 mx-4"
+                     style="height: 50px;">
+            </a>
+            <p class="mb-0 small fw-light text-center text-md-start">
+                Wasp Team 2026.
+            </p>
+        </div>
+        <div class="col-md d-none d-md-block"></div>
 
-    <div class="col-md d-none d-md-block"></div>
-
-        <div class="col-12 col-md-auto">
+        <!-- Footer links -->
+        <nav class="col-12 col-md-auto">
             <div class="d-flex flex-column flex-md-row gap-md-3">
-                
                 <hr class="w-100 d-md-none border-light opacity-50 my-2">
                 <div class="border-md-start ps-md-4 py-md-1">
-                    <a href="index.html" class="d-block text-decoration-none text-white small">Home</a>
-                    <a href="about.html" class="d-block text-decoration-none text-white small">About Us</a>
+                    <a href="index.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Home</a>
+                    <a href="about.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">About Us</a>
                 </div>
-
                 <hr class="w-100 d-md-none border-light opacity-50 my-2">
                 <div class="border-md-start ps-md-4 py-md-1">
-                    <a href="report-page.html" class="d-block text-decoration-none text-white small">Report</a>
-                    <a href="indentification.html" class="d-block text-decoration-none text-white small">Identification</a>
+                    <a href="report-page.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Report</a>
+                    <a href="indentification.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Identification</a>
                 </div>
-
                 <hr class="w-100 d-md-none border-light opacity-50 my-2">
+
                 <div class="border-md-start ps-md-4 py-md-1">
-                    <a href="why_they_are_harmful.html" class="d-block text-decoration-none text-white small">Info</a>
-                    <a href="safety-page.html" class="d-block text-decoration-none text-white small">Safety</a>
+                    <a href="why_they_are_harmful.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Info</a>
+                    <a href="safety-page.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Safety</a>
                 </div>
                 <hr class="w-100 d-md-none border-light opacity-50 mt-2">
-
             </div>
-        </div>
+        </nav>
     </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
