@@ -24,7 +24,7 @@
 
 
 .honeycomb-bg {
-  background-color: #dba205;
+  background-color: #ffc400;
   background-image: url("/Images/Repeating-honeycomb.png");
   background-repeat: repeat;
   background-size: 400px;
@@ -253,9 +253,10 @@
 }
 
 
-/* Report Page Buttons */
+
+/* Report Page */
 .report-page-button {
-  background-color: #003030;
+  background-color: #000000;
   border-radius: 15px;
   color: white;
   font-family: "Lalezar", sans-serif;
@@ -265,6 +266,10 @@
 .report-page-button:hover {
   transform: translateY(-10px);
   transition: 0.7s;
+}
+
+.report-button-link {
+  text-decoration: none;
 }
 
 
