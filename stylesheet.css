@@ -474,3 +474,19 @@ img {
   color: #FFC219;
   transform: scale(1.05);
 } 
+
+
+.readmorebtn {
+  font-weight: 700;
+  background-color: rgb(255, 196, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+} 
+.readmorebtn:hover{
+  background-color: rgb(0, 0, 0);
+  border: #000;
+  color: #ffffff;
+  transform: translateX(-5px);
+  transition: 0.3s;
+} 
