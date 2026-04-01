@@ -377,11 +377,10 @@
   border: 2px solid black;
 }
 
-img {
-  filter: drop-shadow(0 6px px rgba(0, 0, 0, 0.5));
-}
+
 .bannerbee-image img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
+  border-radius: 25px;
 }
 
 .navbar {
@@ -472,6 +471,7 @@ img {
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
   padding: 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
 
 }
 .aboutus-text:hover {
@@ -486,6 +486,7 @@ img {
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
   padding: 10px 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
 } 
 .contactbutton:hover{
   background-color: rgb(0, 0, 0);
