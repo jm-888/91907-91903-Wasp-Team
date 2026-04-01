@@ -68,7 +68,12 @@
 .navbar .nav-link:hover {
   color: #ffffff !important;
 }
-
+.lead {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Geist", sans-serif;
+}
 .contact-btn {
   background-color: #000;
   color: #fff;
