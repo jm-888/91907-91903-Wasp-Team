@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lalezar&display=swap');
 
 
-
 /* Nav Trialing */
 #nav-trial-1 {
   background: #FFC219;
@@ -69,7 +68,12 @@
 .navbar .nav-link:hover {
   color: #ffffff !important;
 }
-
+.lead {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Geist", sans-serif;
+}
 .contact-btn {
   background-color: #000;
   color: #fff;
@@ -215,34 +219,7 @@
   background-color: #ffefa8; 
 }
 
-.custom-btn {
-  margin: 0px;
-  background-color: #ffcc3f; 
-  border: 5px solid #ffe38e; /*border */
-  padding: 50px 80px;
-  
-  font-weight: 800; /* bolder text */
-  font-size: 30px;
-  color: #363636;
 
-  border-radius: 40px;
-  cursor: pointer;
-
-  /* simple shadow (not shiny) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
-  transition: all 0.3s ease;
-}
-
-.custom-btn:hover {
-  background-color: #ffba25;
-  transform: translateY(-10px);
-}
-
-.custom-btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
 .img-text {
   position: absolute;
   top: 50%;
@@ -307,19 +284,30 @@
 
 /* BUTTONS */
 .custom-btn {
-  border-radius: 70px;
-  padding: 70px 100px;
-  border: 5px solid rgb(255, 234, 116);
-  background: rgb(255, 208, 0);
-  font-weight: 600;
-  transition: 0.3s;
+  margin: 0px;
+  background-color: #ffcc3f; 
+  border: 5px solid #ffe38e; /*border */
+  padding: 80px 120px;
+  
+  font-weight: 800; /* bolder text */
+  font-size: 30px;
+  color: #363636;
+
+  border-radius: 60px;
+  cursor: pointer;
+
+  /* simple shadow (not shiny) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease; /* Smooth transitions for everything */
 }
 
 .custom-btn:hover {
   background: black;
   color: white;
-  border: #f8f9fa;
-  transform: scale(1.05);
+  border: 5px solid #000000; /* Added border width for consistency */
+  transform: translateY(-10px); /* Added translateY effect */
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease; /* hover is smooth */
 }
 
 /* TITLE BOX BASIC INFO*/
@@ -377,11 +365,9 @@
   border: 2px solid black;
 }
 
-img {
-  filter: drop-shadow(0 6px px rgba(0, 0, 0, 0.5));
-}
 .bannerbee-image img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
+  border-radius: 25px;
 }
 
 .navbar {
@@ -472,6 +458,7 @@ img {
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
   padding: 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
 
 }
 .aboutus-text:hover {
@@ -486,6 +473,7 @@ img {
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
   padding: 10px 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
 } 
 .contactbutton:hover{
   background-color: rgb(0, 0, 0);
@@ -508,3 +496,116 @@ img {
   transform: translateX(-5px);
   transition: 0.3s;
 } 
+
+body {
+  background-color: #e6e6e6;
+  font-family: Arial, sans-serif;
+}
+
+.goals-card {
+  background: linear-gradient(135deg, #fff1a2, #FFC219);
+  border-radius: 25px;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  border: 3px solid #ffc83e;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+
+  transition: all 0.3s ease;
+}
+
+.goals-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Title */
+.goals-title {
+  letter-spacing: 5px;
+  font-family: lalezar, sans-serif;
+}
+
+/* List */
+.goals-list li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 18px;
+  font-family: "Geist", sans-serif;
+  font-weight: 600;
+}
+
+.goals-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+/* ===== CORNER HONEYCOMBS ===== */
+.goals-card::before,
+.goals-card::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 220px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+/* TOP RIGHT */
+.goals-card::before {
+  top: -30px;
+  right: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='none' stroke='%23ffb700' stroke-width='4'/%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='%23ffcc00' opacity='0.4'/%3E%3Cpolygon points='110,10 170,10 195,55 170,100 110,100 85,55' fill='none' stroke='%23ffb700' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+/* BOTTOM LEFT */
+.goals-card::after {
+  bottom: -30px;
+  left: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='%23ffcc00' opacity='0.35'/%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='none' stroke='%23ffb700' stroke-width='4'/%3E%3Cpolygon points='20,60 70,60 95,100 70,140 20,140 -5,100' fill='%23ffd60a' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* subtle hover animation */
+.goals-card:hover::before,
+.goals-card:hover::after {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* ===== CORNER HONEYCOMBS ===== */
+.goals-card::before,
+.goals-card::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 220px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+/* TOP RIGHT */
+.goals-card::before {
+  top: -30px;
+  right: -30px;
+  transition: transform 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Outline hex --%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='none' stroke='%23e09a00' stroke-width='4'/%3E%3C!-- Filled hex --%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='%23e09a00' opacity='0.35'/%3E%3C!-- Small outline --%3E%3Cpolygon points='110,10 170,10 195,55 170,100 110,100 85,55' fill='none' stroke='%23e09a00' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+/* BOTTOM LEFT */
+.goals-card::after {
+  bottom: -30px;
+  left: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Filled hex --%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='%23e09a00' opacity='0.3'/%3E%3C!-- Outline hex --%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='none' stroke='%23e09a00' stroke-width='4'/%3E%3C!-- Small filled --%3E%3Cpolygon points='20,60 70,60 95,100 70,140 20,140 -5,100' fill='%23e09a00' opacity='0.25'/%3E%3C/svg%3E");
+}
+
+/* subtle hover animation */
+.goals-card:hover::before,
+.goals-card:hover::after {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

@@ -11,7 +11,7 @@
 </head>
 <body class="index-body">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="bannerbee" href="#">
+        <a class="bannerbee" href="index.html">
             <img src="Images/Hornet-Logo-Black.png" width="50" height="50" class="d-inline-block align-text-top me-2">
         </a>
 
@@ -36,9 +36,7 @@
             </div>
             </li>
             </ul>
-            <form class="d-flex">
-                <button class="btn contact-btn contactbutton" type="submit">Contact Us</button>
-            </form>
+            <a href="mailto:jm22186@my.westlake.school.nz" class="btn contact-btn contactbutton">Contact Us</a>
         </div>
     </nav>
     
@@ -49,7 +47,7 @@
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h1 class="display-5 fw-bold welcometext">Welcome to Wasp Team</h1>
                     <p class="lead">Discover, report, and learn about wasps and hornets, important insects that can also pose risks. By understanding their behavior and reporting sightings, you help keep others informed and safe. Together, we can build a more aware and safer environment.</p>
-                    <button class="btn btn-dark mt-3 aboutus-text">About Us</button>
+                    <a href="about.html"><button class="btn btn-dark mt-3 aboutus-text">About Us</button></a>
                 </div>
                 <!-- Image on the right -->
                 <div class="col-md-6 text-center bannerbee-image">
@@ -62,9 +60,9 @@
 
 <div class="container py-5 text-center buttons">
   <div class="d-flex justify-content-center gap-5 flex-wrap">
-    <button class="custom-btn"><strong>Images</strong></button>
-    <button class="custom-btn"><strong>Safety</strong></button>
-    <button class="custom-btn"><strong>Report</strong></button>
+    <a href="identification.html"><button class="custom-btn"><strong>Images</strong></button></a>
+    <a href="safety-page.html"><button class="custom-btn"><strong>Safety</strong></button></a>
+    <a href="report-page.html"><button class="custom-btn"><strong>Report</strong></button></a>
   </div>
 </div>
 <div class="container text-center py-5">
@@ -89,50 +87,54 @@
                     <p class="text-muted px-4">
 The History of Hornets and Bees
 The history of hornets and bees is deeply intertwined, with both being part of the Hymenoptera order. Hornets belong to the family Vespidae, while bees are in the family Apidae. Despite their close relationship, they have diverged significantly at the family level, leading to distinct biological groups. Bees are known for their social structures and complex interactions with flowering plants, while hornets are known for their aggressive behavior and predation on bees. The relationship between hornets and bees is a predator-prey relationship, with hornets targeting bees for protein to feed their larvae. This interaction is a significant aspect of their history and the dynamics of their populations. <br> <strong>-Museum of Earth<strong></strong></p>
-                    <button class="btn btn-warning fw-bold mt-2 mx-4 readmorebtn">Read More!</button>
+                    <a href="identification.html"><button class="btn btn-warning fw-bold mt-2 mx-4 readmorebtn">Read More!</button></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="footer-trial-1" class="text-white py-2 container-fluid">
-        <div class="row align-items-center px-5">
-            <!-- Logo and copyright -->
-            <div class="col-12 col-md-auto mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-                <a href="#"><img src="Images/Hornet-Logo-White.png" alt="Logo" class="footer-logo mb-1 mx-4" style="height: 50px;"></a>
-                <p class="mb-0 small fw-light text-center text-md-start">Wasp Team 2026.</p>
-            </div>
-
-            <!-- Spacer for layout on medium+ screens -->
-            <div class="col-md d-none d-md-block"></div>
-            <!-- Footer navigation links -->
-            <div class="col-12 col-md-auto">
-                <div class="d-flex flex-column flex-md-row gap-md-3">
-                    <!-- First group of links -->
-                    <hr class="w-100 d-md-none border-light opacity-50 my-2">
-                    <div class="border-md-start ps-md-4 py-md-1">
-                        <a href="#" class="d-block text-decoration-none text-white small">Home</a>
-                        <a href="#" class="d-block text-decoration-none text-white small">About Us</a>
-                    </div>
-                    <!-- Second group of links -->
-                    <hr class="w-100 d-md-none border-light opacity-50 my-2">
-                    <div class="border-md-start ps-md-4 py-md-1">
-                        <a href="#" class="d-block text-decoration-none text-white small">Report</a>
-                        <a href="#" class="d-block text-decoration-none text-white small">Identification</a>
-                    </div>
-                    <!-- Third group of links -->
-                    <hr class="w-100 d-md-none border-light opacity-50 my-2">
-                    <div class="border-md-start ps-md-4 py-md-1">
-                        <a href="#" class="d-block text-decoration-none text-white small">Info</a>
-                        <a href="#" class="d-block text-decoration-none text-white small">Safety</a>
-                    </div>
-                    <hr class="w-100 d-md-none border-light opacity-50 mt-2">
-                </div>
-            </div>
+ <!-- Footer -->
+<footer id="footer-main" class="text-white py-2 container-fluid">
+    <div class="row align-items-center px-3">
+        <!-- Logo + text -->
+        <div class="col-12 col-md-auto mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+            <a href="index.html">
+                <img src="Images/Hornet-Logo-White.png"
+                     alt="Logo"
+                     class="footer-logo mb-1 mx-4"
+                     style="height: 50px;">
+            </a>
+            <p class="mb-0 small fw-light text-center text-md-start">
+                Wasp Team 2026.
+            </p>
         </div>
-    </footer>
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-md d-none d-md-block"></div>
+
+        <!-- Footer links -->
+        <nav class="col-12 col-md-auto">
+            <div class="d-flex flex-column flex-md-row gap-md-3">
+                <hr class="w-100 d-md-none border-light opacity-50 my-2">
+                <div class="border-md-start ps-md-4 py-md-1">
+                    <a href="index.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Home</a>
+                    <a href="about.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">About Us</a>
+                </div>
+                <hr class="w-100 d-md-none border-light opacity-50 my-2">
+                <div class="border-md-start ps-md-4 py-md-1">
+                    <a href="report-page.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Report</a>
+                    <a href="identification.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Identification</a>
+                </div>
+                <hr class="w-100 d-md-none border-light opacity-50 my-2">
+
+                <div class="border-md-start ps-md-4 py-md-1">
+                    <a href="why_they_are_harmful.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Info</a>
+                    <a href="safety-page.html" class="d-block text-decoration-none text-white small px-md-3 footer-button">Safety</a>
+                </div>
+                <hr class="w-100 d-md-none border-light opacity-50 mt-2">
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
