@@ -503,15 +503,15 @@ body {
 }
 
 .goals-card {
-  background: linear-gradient(135deg, #f7b500, #f4a300);
+  background: linear-gradient(135deg, #fff1a2, #FFC219);
   border-radius: 25px;
   max-width: 700px;
   width: 100%;
   position: relative;
   overflow: hidden;
 
-  border: 3px solid #e09a00;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: 3px solid #ffc83e;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
 
   transition: all 0.3s ease;
 }
@@ -524,6 +524,7 @@ body {
 /* Title */
 .goals-title {
   letter-spacing: 5px;
+  font-family: lalezar, sans-serif;
 }
 
 /* List */
@@ -532,6 +533,8 @@ body {
   font-size: 1.1rem;
   position: relative;
   padding-left: 18px;
+  font-family: "Geist", sans-serif;
+  font-weight: 600;
 }
 
 .goals-list li::before {
@@ -540,20 +543,69 @@ body {
   left: 0;
 }
 
-/* ===== HONEYCOMB BACKGROUND ===== */
-.goals-card::before {
+/* ===== CORNER HONEYCOMBS ===== */
+.goals-card::before,
+.goals-card::after {
   content: "";
   position: absolute;
-  inset: 0;
+  width: 260px;
+  height: 220px;
   pointer-events: none;
-
-  background-image: url("data:image/svg+xml,%3Csvg width='160' height='140' viewBox='0 0 160 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='40,5 120,5 155,70 120,135 40,135 5,70' fill='none' stroke='%23e09a00' stroke-width='3'/%3E%3Cpolygon points='40,5 120,5 155,70 120,135 40,135 5,70' fill='%23e09a00' opacity='0.15' transform='translate(80,70) scale(0.8)'/%3E%3C/svg%3E");
-
-  background-size: 160px 140px;
-  opacity: 0.25;
+  background-repeat: no-repeat;
 }
 
-/* Slight hover enhancement */
-.goals-card:hover::before {
-  opacity: 0.4;
+/* TOP RIGHT */
+.goals-card::before {
+  top: -30px;
+  right: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='none' stroke='%23ffb700' stroke-width='4'/%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='%23ffcc00' opacity='0.4'/%3E%3Cpolygon points='110,10 170,10 195,55 170,100 110,100 85,55' fill='none' stroke='%23ffb700' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+/* BOTTOM LEFT */
+.goals-card::after {
+  bottom: -30px;
+  left: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='%23ffcc00' opacity='0.35'/%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='none' stroke='%23ffb700' stroke-width='4'/%3E%3Cpolygon points='20,60 70,60 95,100 70,140 20,140 -5,100' fill='%23ffd60a' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* subtle hover animation */
+.goals-card:hover::before,
+.goals-card:hover::after {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* ===== CORNER HONEYCOMBS ===== */
+.goals-card::before,
+.goals-card::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 220px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+/* TOP RIGHT */
+.goals-card::before {
+  top: -30px;
+  right: -30px;
+  transition: transform 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Outline hex --%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='none' stroke='%23e09a00' stroke-width='4'/%3E%3C!-- Filled hex --%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='%23e09a00' opacity='0.35'/%3E%3C!-- Small outline --%3E%3Cpolygon points='110,10 170,10 195,55 170,100 110,100 85,55' fill='none' stroke='%23e09a00' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+/* BOTTOM LEFT */
+.goals-card::after {
+  bottom: -30px;
+  left: -30px;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 180' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Filled hex --%3E%3Cpolygon points='50,5 150,5 195,90 150,175 50,175 5,90' fill='%23e09a00' opacity='0.3'/%3E%3C!-- Outline hex --%3E%3Cpolygon points='70,40 130,40 160,90 130,140 70,140 40,90' fill='none' stroke='%23e09a00' stroke-width='4'/%3E%3C!-- Small filled --%3E%3Cpolygon points='20,60 70,60 95,100 70,140 20,140 -5,100' fill='%23e09a00' opacity='0.25'/%3E%3C/svg%3E");
+}
+
+/* subtle hover animation */
+.goals-card:hover::before,
+.goals-card:hover::after {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
