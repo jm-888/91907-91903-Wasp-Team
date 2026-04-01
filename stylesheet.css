@@ -215,34 +215,7 @@
   background-color: #ffefa8; 
 }
 
-.custom-btn {
-  margin: 0px;
-  background-color: #ffcc3f; 
-  border: 5px solid #ffe38e; /*border */
-  padding: 50px 80px;
-  
-  font-weight: 800; /* bolder text */
-  font-size: 30px;
-  color: #363636;
 
-  border-radius: 40px;
-  cursor: pointer;
-
-  /* simple shadow (not shiny) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
-  transition: all 0.3s ease;
-}
-
-.custom-btn:hover {
-  background-color: #ffba25;
-  transform: translateY(-10px);
-}
-
-.custom-btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
 .img-text {
   position: absolute;
   top: 50%;
@@ -307,19 +280,30 @@
 
 /* BUTTONS */
 .custom-btn {
-  border-radius: 70px;
-  padding: 70px 100px;
-  border: 5px solid rgb(255, 234, 116);
-  background: rgb(255, 208, 0);
-  font-weight: 600;
-  transition: 0.3s;
+  margin: 0px;
+  background-color: #ffcc3f; 
+  border: 5px solid #ffe38e; /*border */
+  padding: 80px 120px;
+  
+  font-weight: 800; /* bolder text */
+  font-size: 30px;
+  color: #363636;
+
+  border-radius: 60px;
+  cursor: pointer;
+
+  /* simple shadow (not shiny) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease; /* Smooth transitions for everything */
 }
 
 .custom-btn:hover {
   background: black;
   color: white;
-  border: #f8f9fa;
-  transform: scale(1.05);
+  border: 5px solid #000000; /* Added border width for consistency */
+  transform: translateY(-10px); /* Added translateY effect */
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease; /* hover is smooth */
 }
 
 /* TITLE BOX BASIC INFO*/
@@ -376,7 +360,6 @@
   border-radius: 15px;
   border: 2px solid black;
 }
-
 
 .bannerbee-image img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
