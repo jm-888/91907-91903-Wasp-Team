@@ -630,3 +630,33 @@ body {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+.creators-section {
+      background-color: #3d2e4a;
+      padding: 3rem 2rem;
+    }
+
+    .creators-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .creator-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .creators-text {
+      color: #e8e0f0;
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 620px;
+      margin: 0 auto;
+    }
