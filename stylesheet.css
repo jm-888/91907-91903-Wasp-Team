@@ -237,16 +237,35 @@
   border-radius: 15px;
   color: white;
   font-family: "Lalezar", sans-serif;
-  transition: 0.7s;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .report-page-button:hover {
-  transform: translateY(-10px);
-  transition: 0.7s;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .report-button-link {
   text-decoration: none;
+}
+
+.report-page-info-pill {
+  background-color: #F4C645;
+  border-radius: 15px;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.report-page-info-pill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-pill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -278,7 +297,7 @@
 }
 
 .hero-banner button:hover {
-  transform: translateY(-2px);
+  transform: scale(1.05);
   transition: 0.3s;
 }
 
@@ -488,7 +507,9 @@
   border-radius: 10px;
   padding: 10px 20px;
   transition: 0.3s;
+  text-decoration: none;
 } 
+
 .readmorebtn:hover{
   background-color: rgb(0, 0, 0);
   border: #000;
