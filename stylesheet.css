@@ -268,23 +268,79 @@
   align-items: center;
 }
 
-
-
-/* Identification Page */
-.indentification-box{
-  background-color: #FFC219;
-  border-radius: 30px;
-  border: solid, black;
+.report-page-image {
+  height: 50px;
 }
 
-.indentification-img {
-    max-width: 500px; /* adjust as needed */
-    width: 100%; /* scale down on smaller screens */
+.report-page-icon {
+  width: 60px; 
+  height: 60px;
+}
+
+/* Identification Page */
+.quicklinks-box {
+    background-color: #ffffff;
+    border: 3px solid #413043;
+    border-radius: 20px;
+}
+
+.quicklinks-box h5 {
+    color: #413043;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+/* Alternating background colors */
+.identification-light-bg {
+    background-color: #ffffff;
+}
+
+.identification-alt-bg {
+    background-color: #fffbf0;
+}
+
+/* Info box styling */
+.info-box {
+    background-color: #FFC219;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-box h3 {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.info-box ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.info-box li {
+    margin-bottom: 12px;
+}
+
+/* Image styling */
+.identification-img {
+    max-width: 500px;
+    width: 100%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px; /* optional, keeps images rounded */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.identification-img:hover {
+    transform: scale(1.03);
 }
 
 /* HERO */
