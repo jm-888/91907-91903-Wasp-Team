@@ -14,46 +14,37 @@
 <header class="honeycomb-bg">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="bannerbee" href="index.html">
-            <img src="Images/Hornet-Logo-Black.png" width="50" height="50"
-                 class="d-inline-block align-text-top me-2"
-                 alt="Website logo">
+            <img src="Images/Hornet-Logo-Black.png" width="50" height="50" class="d-inline-block align-text-top me-2">
         </a>
-        <!-- Burger menu -->
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Nav links -->
+            </button>
+
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="report-page.html">Report</a></li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        More
-                    </a>
-                    <ul class="dropdown-menu custom-menu">
-                        <li><a class="dropdown-item" href="indentification.html">Identification</a></li>
-                        <li><a class="dropdown-item" href="why_they_are_harmful.html">Why They're Harmful</a></li>
-                        <li><a class="dropdown-item" href="safety-page.html">Safety</a></li>
-                    </ul>
-                </li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="report-page.html">Report</a></li>
+            <li class="nav-item dropdown">
+            <li class="nav-item dropdown custom-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+            <div class="dropdown-menu custom-menu">
+                <a class="dropdown-item" href="identification.html">Identification</a>
+                <a class="dropdown-item" href="Why_they_are_harmful.html">Why They're Harmful</a>
+                <a class="dropdown-item" href="safety-page.html">Safety</a>
+            </div>
+            </li>
             </ul>
-            <form class="d-flex">
-                <button class="btn contact-btn" type="submit">Contact Us</button>
-            </form>
+            <a href="mailto:jm22186@my.westlake.school.nz" class="btn contact-btn contactbutton">Contact Us</a>
         </div>
     </nav>
 </header>
 
 <!-- Hero Banner -->
-<section class="hero-banner py-5 text-dark" style="background-color: #FFC219;">
+<section class="hero-banner py-5 text-dark">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
@@ -62,7 +53,7 @@
                 <a class="btn btn-dark mt-3" href="report-page.html" target="_blank">Report a Sighting</a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="Images/bannerbee.png" alt="Wasp Team Logo" class="img-fluid" style="max-height: 250px;">
+                <img src="Images/Hornet_on_a_tissue.jpg" alt="Wasp Team Logo" class="img-fluid hero-banner-img">
             </div>
         </div>
     </div>
@@ -70,9 +61,9 @@
 
 <!-- Quick Links Container -->
 <div class="container my-5">
-    <div class="quicklinks-box p-5 mb-5">
+    <div class="quicklinks-box p-4 mb-4">
         <h5 class="mb-4">Jump straight to...</h5>
-        <div class="row g-3">
+        <div class="row g-3 justify-content-center">
             <div class="col-12 col-sm-6 col-lg-auto">
                 <a href="#closeup" class="btn btn-warning w-100 fw-bold">Close-up Features</a>
             </div>
@@ -95,10 +86,10 @@
 <!-- Section 1: Close-up Features -->
 <section class="py-5 identification-light-bg" id="closeup">
     <div class="container">
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-3 mb-4">
             <div class="col-12 col-md-6 order-md-1 order-2">
-                <div class="info-box p-5">
-                    <h3 class="fw-bold mb-3">Close-up Features</h3>
+                <div class="info-box p-4 h-100 d-flex flex-column justify-content-center">
+                <h3 class="fw-bold mb-3">Close-up Features</h3>
                     <p class="mb-3">Yellow-legged hornets (Vespa velutina) are one of the largest invasive hornet species. Key features include:</p>
                     <ul class="mb-0">
                         <li class="mb-2">Bright yellow legs contrasting with dark brown body.</li>
@@ -108,7 +99,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 order-md-2 order-1 text-center">
+            <div class="col-12 col-md-6 order-md-2 order-1 text-center ps-md-4">
                 <img src="Images/Identification-Hornet-Close-Up.jpg" alt="Hornet Close-up" class="img-fluid rounded-3 identification-img">
             </div>
         </div>
@@ -118,9 +109,9 @@
 <!-- Section 2: Differences -->
 <section class="py-5 identification-alt-bg" id="differences">
     <div class="container">
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-3 mb-4">
             <div class="col-12 col-md-6 order-md-2 order-2">
-                <div class="info-box p-5">
+                <div class="info-box p-4 h-100 d-flex flex-column justify-content-center">
                     <h3 class="fw-bold mb-3">Differences from Other Species</h3>
                     <p class="mb-3">Confusing hornets with native bees or wasps is common. This is a Honeybee. Differences include:</p>
                     <ul class="mb-0">
@@ -136,15 +127,15 @@
                 <img src="Images/Identification-Differences-Honeybee.jpg" alt="honeybee close up" class="img-fluid rounded-3 identification-img">
             </div>
         </div>
-    </div>
+    </div> 
 </section>
 
 <!-- Section 3: Hives & Nests -->
 <section class="py-5 identification-light-bg" id="hives">
     <div class="container">
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-3 mb-4">
             <div class="col-12 col-md-6 order-md-1 order-2">
-                <div class="info-box p-5">
+                <div class="info-box p-4 h-100 d-flex flex-column justify-content-center">
                     <h3 class="fw-bold mb-3">Hives & Nests</h3>
                     <p class="mb-3">Yellow-legged hornet nests are usually spherical and made from chewed wood pulp. They are often found:</p>
                     <ul class="mb-3">
@@ -165,9 +156,9 @@
 <!-- Section 4: Habits & Behavior -->
 <section class="py-5 identification-alt-bg" id="habits">
     <div class="container">
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-3 mb-4">
             <div class="col-12 col-md-6 order-md-2 order-2">
-                <div class="info-box p-5">
+                <div class="info-box p-4 h-100 d-flex flex-column justify-content-center">
                     <h3 class="fw-bold mb-3">Habits & Behavior</h3>
                     <p class="mb-3">Yellow-legged hornets are predatory and territorial. Important points:</p>
                     <ul class="mb-3">
@@ -189,9 +180,9 @@
 <!-- Section 5: Safety Tips -->
 <section class="py-5 identification-light-bg" id="safety">
     <div class="container">
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-3 mb-4">
             <div class="col-12 col-md-6 order-md-1 order-2">
-                <div class="info-box p-5">
+                <div class="info-box p-4 h-100 d-flex flex-column justify-content-center">
                     <h3 class="fw-bold mb-3">Safety Tips</h3>
                     <p class="mb-3">To stay safe around yellow-legged hornets:</p>
                     <ul class="mb-0">
@@ -211,11 +202,11 @@
 </section>
 
 <!-- Image Attribution Section -->
-<section class="py-5" style="background-color: #f0f0f0; border-top: 2px solid #ddd;">
+<section class="py-5 px-3 image-attribution">
     <div class="container">
         <h4 class="fw-bold mb-4">Image Credits & Attributions</h4>
         <div class="row">
-            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="col-md-6 mb-3 mb-md-0 ">
                 <p><strong>Identification-Hornet-Close-Up.jpg:</strong> Public domain (CC0), Wikimedia Commons</p>
                 <p><strong>Identification-Differences-Honeybee.jpg:</strong> Public domain (CC0), Wikimedia Commons</p>
             </div>
