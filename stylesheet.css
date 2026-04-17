@@ -203,7 +203,7 @@
 }
 
 .hero-banner-img {
-  max-height: 350px;
+  max-height: 400;
 }
 
 /* Button styles */
@@ -244,7 +244,7 @@
   font-family: "Lalezar", sans-serif;
   transition: all 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.50);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75);
   border: 2px solid transparent;
 }
 
@@ -263,12 +263,12 @@
   border-radius: 18px;
   border: 3px solid #000000;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .report-page-info-pill:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .info-pill-icon {
@@ -285,6 +285,23 @@
   width: 60px; 
   height: 60px;
 }
+
+.report-readmorebtn {
+  font-weight: 700;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  border: black;
+}
+
+.report-readmorebtn:hover{
+  color: rgb(255, 200, 0);
+  transform: translateX(-5px);
+  transition: 0.3s;
+} 
 
 /* Identification Page */
 .quicklinks-box {
@@ -314,10 +331,15 @@
 }
 
 /* Info box styling */
-.info-box {
-    background-color: #FFC219;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.info-box { 
+  background: linear-gradient(135deg, #FFC219 0%, #ffda5c 100%); 
+  border-radius: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.12); 
+  transition: all 0.3s ease; 
+} 
+  
+.info-box:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18); 
 }
 
 .info-box h3 {
@@ -363,6 +385,10 @@
     box-shadow: 0 14px 30px rgba(0,0,0,0.28);
 }
 
+#identification-hero-img {
+  max-height: 400px;
+}
+
 /* HERO */
 .hero-banner {
     background: linear-gradient(135deg, #FFC219, #ffda5c);
@@ -371,6 +397,7 @@
 
 .hero-banner h1 {
   font-weight: 800;
+  color: black;
 }
 
 .hero-banner button:hover {
@@ -459,6 +486,10 @@
   background-color: #F4C645;
   border-radius: 15px;
   border: 2px solid black;
+}
+
+.report-page-info-pill-title {
+  font-family: "Lalezar", sans-serif;
 }
 
 .bannerbee-image img {
