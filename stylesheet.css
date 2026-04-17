@@ -203,7 +203,7 @@
 }
 
 .hero-banner-img {
-  max-height: 400;
+  max-height: 400px;
 }
 
 /* Button styles */
@@ -321,9 +321,7 @@
 }
 
 .quicklinks-box h5 {
-    color: #413043;
     font-weight: 800;
-    font-size: 1.3rem;
     letter-spacing: 1px;
 }
 
