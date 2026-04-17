@@ -294,7 +294,6 @@
   padding: 10px 20px;
   transition: 0.3s;
   text-decoration: none;
-  border: black;
 }
 
 .report-readmorebtn:hover{
@@ -302,6 +301,17 @@
   transform: translateX(-5px);
   transition: 0.3s;
 } 
+
+
+.report-page-info-pill {
+  background-color: #F4C645;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.report-page-info-pill-title {
+  font-family: "Lalezar", sans-serif;
+}
 
 /* Identification Page */
 .quicklinks-box {
@@ -482,15 +492,6 @@
 
 
 
-.report-page-info-pill {
-  background-color: #F4C645;
-  border-radius: 15px;
-  border: 2px solid black;
-}
-
-.report-page-info-pill-title {
-  font-family: "Lalezar", sans-serif;
-}
 
 .bannerbee-image img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));

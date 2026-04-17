@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Template page for Hornet team, includes navigation and footer layout.">
-    <meta name="keywords" content="hornet, navigation, website">
+    <meta name="description" content="Report sightings of invasive yellow-legged hornets in New Zealand. Submit reports, learn identification tips, and help protect native biodiversity.">    
+    <meta name="keywords" content="hornet, navigation, website, report, yellow-legged, new zealand, invasive">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Report a Hornet Sighting</title>
@@ -16,9 +16,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="bannerbee" href="index.html">
-            <img src="Images/Hornet-Logo-Black.png" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <img src="Images/Hornet-Logo-Black.png" width="50" height="50" alt="Image of a hornet." class="d-inline-block align-text-top me-2">
         </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarContent" aria-controls="navbarContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +56,8 @@
                 <p class="lead">
                     Help us track hornets in your area. Submit sightings quickly and easily so we can protect native bees and biodiversity.
                 </p>
-                <a class="report-button-link" target="_blank" href="https://forms.office.com/r/gKqWmHzZ0z">
-                    <button class="btn btn-dark mt-3 aboutus-text">Submit a Report</button>
+                <a class="report-button-link btn btn-dark mt-3 aboutus-text" target="_blank" href="https://forms.office.com/r/gKqWmHzZ0z">
+                    Submit a Report
                 </a>
             </div>
             <!-- Image on the right -->
@@ -70,36 +69,30 @@
 </section>
 
 <!--Report Buttons-->
-<section class="container pt-2 mt-4">
+<div class="container pt-2 mt-4">
     <div class="row g-4 mb-5">
         <div class="col-12 col-md-4">
-            <a class="report-button-link" target="_blank" href="https://forms.office.com/r/gKqWmHzZ0z">
-                <button class="report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto">
-                    <img alt="Chat box with exclamation mark" src="Images/ChatExclamation.png" class="me-3 report-page-image">
-                    <span class="fw-bold fs-2 m-0 text-center">SUBMIT A FORM</span>
-                </button>
+            <a class="report-button-link report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto" target="_blank" href="https://forms.office.com/r/gKqWmHzZ0z">
+                <img alt="Chat box with exclamation mark" src="Images/ChatExclamation.png" class="me-3 report-page-image">
+                <span class="fw-bold fs-2 m-0 text-center">SUBMIT A FORM</span>
             </a>
         </div>
         <div class="col-12 col-md-4">
-            <a class="report-button-link" href="tel:+123456789">
-                <button class="report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto"> 
-                    <img alt="Phone icon" src="Images/Phone Icon.png" class="me-3 report-page-image">
-                    <span class="fw-bold fs-2 m-0 text-center">CALL US</span>
-                </button>
+            <a class="report-button-link report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto" href="tel:+123456789">
+                <img alt="Phone icon" src="Images/Phone-Icon.png" class="me-3 report-page-image">
+                <span class="fw-bold fs-2 m-0 text-center">CALL US</span>
             </a>
         </div>
         <div class="col-12 col-md-4">
-            <a class="report-button-link" href="mailto:waspteamemail@gmail.com">
-                <button class="report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto">
-                    <img alt="Email icon" src="Images/Email Icon.png" class="me-3 report-page-image">
-                    <span class="fw-bold fs-2 m-0 text-center">EMAIL US</span>
-                </button>
+            <a class="report-button-link report-page-button w-100 d-flex align-items-center justify-content-center p-4 h-auto" href="mailto:waspteamemail@gmail.com">
+                <img alt="Email icon" src="Images/Email-Icon.png" class="me-3 report-page-image">
+                <span class="fw-bold fs-2 m-0 text-center">EMAIL US</span>
             </a>
         </div>
     </div>
-</section>
+</div>
 
-<section class="container py-3">
+<div class="container py-3">
     <!-- Info Pills Section -->
     <div class="row g-4">
         <!-- Box 1: Identification -->
@@ -108,7 +101,7 @@
                 <div class="info-pill-icon mb-3">
                     <img src="Images/Magnifying-Glass-Icon.png" alt="Identification icon" class="report-page-icon">
                 </div>
-                <h5 class="fw-bold mb-2 report-page-info-pill-title">Identification</h5>
+                <h2 class="h5 fw-bold mb-2 report-page-info-pill-title">Identification</h2>
                 <p class="small mb-2">
                     Yellow-legged hornets are larger than bees with distinctive yellow legs and an orange-brown body. Adult workers are 17-20mm long with a characteristic pattern.
                 </p>
@@ -125,7 +118,7 @@
                 <div class="info-pill-icon mb-3">
                     <img src="Images/location-icon.png" alt="Location icon" class="report-page-icon">
                 </div>
-                <h5 class="fw-bold mb-2 report-page-info-pill-title">Location & Habitat</h5>
+                <h2 class="h5 fw-bold mb-2 report-page-info-pill-title">Location & Habitat</h2>
                 <p class="small mb-2">
                     Commonly found throughout northern New Zealand during summer and autumn months. They build large paper nests in trees, roofs, and sheltered locations.
                 </p>
@@ -142,7 +135,7 @@
                 <div class="info-pill-icon mb-3">
                     <img src="Images/Warning-Icon.png" alt="Harmful icon" class="report-page-icon">
                 </div>
-                <h5 class="fw-bold mb-2 report-page-info-pill-title">Why They're Harmful</h5>
+                <h2 class="h5 fw-bold mb-2 report-page-info-pill-title">Why They're Harmful</h2>
                 <p class="small mb-2">
                     Yellow-legged hornets prey on native bees, severely threatening New Zealand's biodiversity and pollinator populations. They can sting multiple times.
                 </p>
@@ -159,9 +152,9 @@
                 <div class="info-pill-icon mb-3">
                     <img src="Images/Shield-Lock-Icon.png" alt="Safety icon" class="report-page-icon">
                 </div>
-                <h5 class="fw-bold mb-2 report-page-info-pill-title">Safety & Reporting</h5>
+                <h2 class="h5 fw-bold mb-2 report-page-info-pill-title">Safety & Reporting</h2>
                 <p class="small mb-2">
-                    If unsure about a sighting, don't worry—no harm in reporting! Submit your observation through our form and help protect New Zealand's ecosystems.
+                    If unsure about a sighting, don't worry there's no harm in reporting! Submit your observation through our form and help protect New Zealand!
                 </p>
                 <p class="small flex-grow-1">
                     Follow safety guidelines when observing potential hornets. Keep a safe distance, never attempt removal yourself, and contact professionals immediately.
@@ -170,7 +163,7 @@
             </article>
         </div>
     </div>
-</section>
+</div>
 </main>
 
 <!-- Footer -->
