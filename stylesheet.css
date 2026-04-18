@@ -1069,6 +1069,7 @@ body {
   text-transform: uppercase;
   color: #888780;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .why-heading {
@@ -1076,6 +1077,7 @@ body {
   font-weight: 800;
   color: #2C2C2A;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .why-grid {
