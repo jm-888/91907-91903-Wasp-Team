@@ -1049,3 +1049,69 @@ body {
   color: #888048;
   margin-top: 10px;
 }
+
+/* ===== WHY WE BUILT THIS SECTION ===== */
+.why-section {
+  background-color: #ffffff;
+  padding: 5rem 1.5rem;
+  border-top: 1px solid #ebebeb;
+}
+
+.why-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #888780;
+  margin-bottom: 8px;
+}
+
+.why-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2C2C2A;
+  margin-bottom: 2rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.why-card {
+  background: #f8f7f2;
+  border: 0.5px solid #d3d1c7;
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.why-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+
+.why-icon {
+  font-size: 24px;
+  margin-bottom: 0.75rem;
+}
+
+.why-card h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2C2C2A;
+  margin-bottom: 0.5rem;
+}
+
+.why-card p {
+  font-size: 13.5px;
+  color: #5F5E5A;
+  line-height: 1.7;
+  margin: 0;
+}
