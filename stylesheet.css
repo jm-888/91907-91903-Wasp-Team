@@ -488,9 +488,6 @@
 }
 
 
-
-
-
 .bannerbee-image img {
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.8));
   border-radius: 25px;
@@ -969,7 +966,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 1.2rem 1.5rem;
-  max-width: 620px;
+  max-width: 540px;
   margin: 0 auto;
 }
 
@@ -988,4 +985,67 @@ body {
   line-height: 1.8;
   padding-left: 1.2rem;
   margin: 0;
+}
+
+/* ===== REPORT CTA SECTION ===== */
+/* Sits directly below the biosecurity section as its own dedicated band */
+.report-cta-section {
+  background-color: #ffefa8;
+  border-top: 1px solid #f0d870;
+  padding: 4rem 1.5rem;
+}
+
+.report-cta-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.report-cta-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #888048;
+  margin-bottom: 8px;
+}
+
+.report-cta-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2C2C2A;
+  margin-bottom: 0.8rem;
+}
+
+.report-cta-desc {
+  font-size: 15px;
+  color: #5F5E5A;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.report-cta-btn {
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.report-cta-btn:hover {
+  background: #1a1a1a;
+  color: #FFC219;
+  transform: scale(1.04);
+}
+
+.report-cta-hint {
+  font-size: 13px;
+  color: #888048;
+  margin-top: 10px;
 }
