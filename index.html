@@ -26,7 +26,6 @@
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="report-page.html">Report</a></li>
-            <li class="nav-item dropdown">
             <li class="nav-item dropdown custom-dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
             <div class="dropdown-menu custom-menu">
@@ -50,7 +49,8 @@
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h1 class="display-5 fw-bold welcometext">Welcome to Wasp Team</h1>
                     <p class="lead">Discover, report, and learn about wasps and hornets, important insects that can also pose risks. By understanding their behavior and reporting sightings, you help keep others informed and safe. Together, we can build a more aware and safer environment.</p>
-                    <a href="about.html"><button class="btn btn-dark mt-3 aboutus-text">About Us</button></a>
+                    <!-- FIX 1: replaced <a><button> with styled <a> -->
+                    <a href="about.html" class="btn btn-dark mt-3 aboutus-text">About Us</a>
                 </div>
                 <!-- Image on the right -->
                 <div class="col-md-6 text-center bannerbee-image">
@@ -63,9 +63,10 @@
 
 <div class="container py-5 text-center buttons">
   <div class="d-flex justify-content-center gap-5 flex-wrap">
-    <a href="identification.html"><button class="custom-btn"><strong>Images</strong></button></a>
-    <a href="safety-page.html"><button class="custom-btn"><strong>Safety</strong></button></a>
-    <a href="report-page.html"><button class="custom-btn"><strong>Report</strong></button></a>
+    <!-- FIX 2, 3, 4: replaced <a><button> with styled <a> -->
+    <a href="identification.html" class="custom-btn"><strong>Images</strong></a>
+    <a href="safety-page.html" class="custom-btn"><strong>Safety</strong></a>
+    <a href="report-page.html" class="custom-btn"><strong>Report</strong></a>
   </div>
 </div>
 <div class="container text-center py-5">
@@ -86,11 +87,14 @@
                     <img src="Images/hornetstanding.png" alt="Hornet image" class="img-fluid rounded">
                 </div>
                 <div class="col-md-5">
-                    <h3 class="fw-bold mb-3 px-4">The History of Hornets</h3>
+                    <!-- FIX 16: changed h3 to h2 to avoid skipping heading levels -->
+                    <h2 class="fw-bold mb-3 px-4">The History of Hornets</h2>
                     <p class="text-muted px-4">
 The History of Hornets and Bees
-The history of hornets and bees is deeply intertwined, with both being part of the Hymenoptera order. Hornets belong to the family Vespidae, while bees are in the family Apidae. Despite their close relationship, they have diverged significantly at the family level, leading to distinct biological groups. Bees are known for their social structures and complex interactions with flowering plants, while hornets are known for their aggressive behavior and predation on bees. The relationship between hornets and bees is a predator-prey relationship, with hornets targeting bees for protein to feed their larvae. This interaction is a significant aspect of their history and the dynamics of their populations. <br> <strong>-Museum of Earth<strong></strong></p>
-                    <a href="identification.html"><button class="btn btn-warning fw-bold mt-2 mx-4 readmorebtn">Read More!</button></a>
+The history of hornets and bees is deeply intertwined, with both being part of the Hymenoptera order. Hornets belong to the family Vespidae, while bees are in the family Apidae. Despite their close relationship, they have diverged significantly at the family level, leading to distinct biological groups. Bees are known for their social structures and complex interactions with flowering plants, while hornets are known for their aggressive behavior and predation on bees. The relationship between hornets and bees is a predator-prey relationship, with hornets targeting bees for protein to feed their larvae. This interaction is a significant aspect of their history and the dynamics of their populations. <br> <!-- FIX 5, 6: closed the unclosed <strong> tag properly -->
+                    <strong>-Museum of Earth</strong></p>
+                    <!-- FIX 7: replaced <a><button> with styled <a> -->
+                    <a href="identification.html" class="btn btn-warning fw-bold mt-2 mx-4 readmorebtn">Read More!</a>
                 </div>
             </div>
         </div>
